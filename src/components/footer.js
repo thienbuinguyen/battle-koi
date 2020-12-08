@@ -1,6 +1,6 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { Container, Grid, Header, List, Segment } from 'semantic-ui-react';
+import { Link, useHistory } from 'react-router-dom';
+import { Button, Container, Grid, GridColumn, Header, Icon, Item, List, Segment } from 'semantic-ui-react';
 
 function Footer() {
   const history = useHistory();
@@ -14,20 +14,43 @@ function Footer() {
             <Grid.Column width={3}>
               <Header inverted as='h4' content='Battle Koi' />
               <List link inverted>
-              <List.Item as='a' onClick={() => {history.push('/about')}}>About</List.Item>
-                <List.Item as='a' onClick={() => {history.push('/contact')}}>Contact Us</List.Item>
+                <List.Item as='a' onClick={() => { history.push('/about') }}>About</List.Item>
+                <List.Item as='a' onClick={() => { history.push('/contact') }}>Contact Us</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
               <Header inverted as='h4' content='Games' />
               <List link inverted>
-                <List.Item as='a' onClick={() => {history.push('/milkshake-jump')}}>Milkshake Jump</List.Item>
+                <List.Item as='a' onClick={() => { history.push('/milkshake-jump') }}>Milkshake Jump</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as='h4' inverted>
                 Social Media
               </Header>
+
+              <Grid>
+                <Grid.Row>
+                  <Grid.Column>
+                    <Item as="a" href='https://www.facebook.com'>
+                      <Icon link={true} inverted={true} name="facebook" size="big" fitted={true} />
+                    </Item>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Item as="a" href='https://www.twitter.com'>
+                      <Icon link={true} inverted={true} name="twitter" size="big" fitted={true} />
+                    </Item>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Item as="a" href='https://www.youtube.com'>
+                      <Icon link={true} inverted={true} name="youtube" size="big" fitted={true} />
+                    </Item>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+
+
+
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
