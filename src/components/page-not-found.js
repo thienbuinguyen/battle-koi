@@ -1,8 +1,13 @@
 import React from 'react';
 
+import DesktopNav from './desktop-nav';
+import HomepageHeading from './homepage-heading';
+
 function PageNotFound() {
   return (
-    <p>Page not found!</p>
+    <DesktopNav active={"home"}>
+      <HomepageHeading mainContent={"LOST BATTLE KOI"} subContent={"The page you requested does not exist..."} />
+    </DesktopNav>
   )
 }
 
