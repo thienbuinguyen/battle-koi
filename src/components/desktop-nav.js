@@ -10,8 +10,6 @@ import {
   Visibility,
   Dropdown,
 } from 'semantic-ui-react'
-import HomepageHeading from './homepage-heading';
-
 
 function DesktopNav(props) {
   const history = useHistory();
@@ -50,6 +48,9 @@ function DesktopNav(props) {
             </Dropdown>
             <Menu.Item active={props.active === "about"} onClick={() => { history.push('/about') }}>
               About
+                  </Menu.Item>
+                  <Menu.Item active={props.active === "contact"} onClick={() => { history.push('/contact') }}>
+              Contact
                   </Menu.Item>
           </Container>
         </Menu>

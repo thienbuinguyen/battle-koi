@@ -1,15 +1,19 @@
 import React from 'react';
 import { Grid, Header, Placeholder, Segment } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
-
-import DesktopNav from './desktop-nav';
 import HomepageHeading from './homepage-heading';
 
-function About() {
+function DesktopHeading() {
+  return
+}
+
+function Contact(props) {
+
+
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"About"} />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Contact"} />
       }
     >
       <Segment vertical>
@@ -18,7 +22,7 @@ function About() {
             <Grid.Column textAlign="center">
               <Header as='h3'>
                 This page is currently under construction...
-            </Header>
+              </Header>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
@@ -42,4 +46,4 @@ function About() {
   )
 }
 
-export default About;
+export default Contact;

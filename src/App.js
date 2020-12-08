@@ -1,3 +1,4 @@
+// @ts-nocheck
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -8,9 +9,9 @@ import { createMedia } from '@artsy/fresnel';
 
 import Home from './components/home';
 import About from './components/about';
+import Contact from './components/contact';
 import MilkshakeJump from './components/milkshake-jump';
 import PageNotFound from './components/page-not-found';
-
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -28,6 +29,9 @@ function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/home">
             <Home />
