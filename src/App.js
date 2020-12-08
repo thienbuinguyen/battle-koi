@@ -3,7 +3,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom';
 import { createMedia } from '@artsy/fresnel';
 
@@ -27,19 +28,19 @@ function App() {
     <MediaContextProvider>
       <Router>
         <Switch>
+        <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
           <Route path="/milkshake-jump">
             <MilkshakeJump />
           </Route>
-          {/* <Redirect from="/" to="/home"/> */}
+          <Redirect from="/home" to="/" />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>
