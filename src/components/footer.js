@@ -2,6 +2,12 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { Button, Container, Grid, GridColumn, Header, Icon, Item, List, Segment } from 'semantic-ui-react';
 
+const Mailto = ({ email, subject, body, children }) => {
+  return (
+    <a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
+  );
+};
+
 function Footer() {
   const history = useHistory();
   const copyright = "Copyright \u00a9 Battle Koi. All Rights Reserved.";
@@ -15,7 +21,7 @@ function Footer() {
               <Header inverted as='h4' content='Battle Koi' />
               <List link inverted>
                 <List.Item as='a' onClick={() => { history.push('/about') }}>About</List.Item>
-                <List.Item as='a' onClick={() => { history.push('/contact') }}>Contact Us</List.Item>
+                <List.Item as='a' onClick={() => { history.push('/contact') }}>Contact</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
@@ -29,29 +35,23 @@ function Footer() {
                 Social Media
               </Header>
 
-              <Grid>
-                <Grid.Row>
-                  <Grid.Column>
-                    <Item as="a" href='https://www.facebook.com'>
-                      <Icon link={true} inverted={true} name="facebook" size="big" fitted={true} />
-                    </Item>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Item as="a" href='https://www.twitter.com'>
-                      <Icon link={true} inverted={true} name="twitter" size="big" fitted={true} />
-                    </Item>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Item as="a" href='https://www.youtube.com'>
-                      <Icon link={true} inverted={true} name="youtube" size="big" fitted={true} />
-                    </Item>
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
 
-
-
+              <List horizontal>
+                <List.Item as="a" target="_blank" href='https://www.facebook.com'>
+                <Icon link={true} color="blue" name="facebook" size="big" />
+                </List.Item>
+                <List.Item as="a" target="_blank" href='https://www.twitter.com'>
+                <Icon link={true} color="blue" name="twitter" size="big" />
+                </List.Item>
+                <List.Item as="a" target="_blank" href='https://www.youtube.com'>
+                <Icon link={true} color="red" name="youtube" size="big" />
+                </List.Item>
+                <List.Item as="a" target="_blank" href="mailto:thien@battlekoi.com?subject='Battle Koi Website Enquiry'">
+                <Icon link={true} color="olive" name="mail" size="big" />
+                </List.Item>
+              </List>
             </Grid.Column>
+            
           </Grid.Row>
           <Grid.Row>
             {copyright}
