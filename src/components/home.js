@@ -3,7 +3,7 @@ import DesktopNav from './desktop-nav';
 
 function Home() {
   return (
-    <DesktopNav></DesktopNav>
+    <DesktopNav active={"home"}/>
   )
 }
 

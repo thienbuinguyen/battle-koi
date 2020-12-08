@@ -1,8 +1,10 @@
 import React from 'react';
 
+import DesktopNav from './desktop-nav';
+
 function About() {
   return (
-    <p>The about page is under construction...</p>
+    <DesktopNav active={"about"}/>
   )
 }
 

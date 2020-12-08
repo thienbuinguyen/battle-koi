@@ -1,6 +1,6 @@
 import React from 'react';
-import {useState} from 'react';
-
+import { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import { createMedia } from "@artsy/fresnel"
 
 import {
@@ -9,6 +9,7 @@ import {
   Menu,
   Segment,
   Visibility,
+  Dropdown,
 } from 'semantic-ui-react'
 
 const { MediaContextProvider, Media } = createMedia({
@@ -21,13 +22,16 @@ const { MediaContextProvider, Media } = createMedia({
 })
 
 function DesktopNav(props) {
+  const history = useHistory();
   const [fixed, setFixed] = useState(true);
-  const hideFixedMenu = () => {setFixed(false);};
-  const showFixedMenu = () => {setFixed(true);}
+  const hideFixedMenu = () => { setFixed(false); };
+  const showFixedMenu = () => { setFixed(true); };
 
-  return(
+  console.log(props.active);
+
+  return (
     <MediaContextProvider>
-<Media greaterThan='mobile'>
+      <Media greaterThan='mobile'>
         <Visibility
           once={false}
           onBottomPassed={showFixedMenu}
@@ -47,27 +51,24 @@ function DesktopNav(props) {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
+                <Menu.Item active={props.active === "home"} onClick={() => { history.push('/home') }}>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
-                </Menu.Item>
+                <Dropdown text='Games' pointing className='link item'>
+                  <Dropdown.Menu>
+                    <Dropdown.Header>Mobile</Dropdown.Header>
+                    <Dropdown.Item onClick={() => { history.push('/milkshake-jump') }}>Milkshake Jump</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Menu.Item active={props.active === "about"} onClick={() => { history.push('/about') }}>
+                  About
+                  </Menu.Item>
               </Container>
             </Menu>
           </Segment>
         </Visibility>
       </Media>
     </MediaContextProvider>
-    
   )
 }
 
