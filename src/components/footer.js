@@ -47,7 +47,7 @@ function Footer() {
                 <Icon link={true} color="red" name="youtube" size="big" />
                 </List.Item>
                 <List.Item as="a" target="_blank" href="mailto:thien@battlekoi.com?subject='Battle Koi Website Enquiry'">
-                <Icon link={true} color="olive" name="mail" size="big" />
+                <Icon link={true} color="grey" name="mail" size="big" />
                 </List.Item>
               </List>
             </Grid.Column>

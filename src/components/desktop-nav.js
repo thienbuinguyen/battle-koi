@@ -9,6 +9,7 @@ import {
   Segment,
   Visibility,
   Dropdown,
+  Image
 } from 'semantic-ui-react'
 
 function DesktopNav(props) {

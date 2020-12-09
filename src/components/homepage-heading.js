@@ -5,6 +5,7 @@ import {
   Header,
   Button,
   Icon,
+  Image,
 } from 'semantic-ui-react';
 
 function HomepageHeading(props) {
@@ -20,7 +21,9 @@ function HomepageHeading(props) {
         marginBottom: 0,
         marginTop: '3em',
       }}
+      image='logo.png'
     />
+    {/* <Image src="logo.png" size="medium" centered></Image> */}
     <Header
       as='h2'
       content={props.subContent}
