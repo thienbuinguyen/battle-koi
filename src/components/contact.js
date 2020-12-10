@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Placeholder, Segment } from 'semantic-ui-react';
+import { Container, Grid, Header, Placeholder, Segment, List, Icon } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
 import HomepageHeading from './homepage-heading';
 
@@ -17,30 +17,26 @@ function Contact(props) {
       }
     >
       <Segment vertical>
-        <Grid container stackable verticalAlign='middle'>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Header as='h3'>
-                This page is currently under construction...
-              </Header>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Placeholder>
-                <Placeholder.Header>
-                  <Placeholder.Line length='very short' />
-                  <Placeholder.Line length='medium' />
-                </Placeholder.Header>
-                <Placeholder.Paragraph>
-                  <Placeholder.Line length='short' />
-                </Placeholder.Paragraph>
-              </Placeholder>
+        <Container text textAlign="center">
+          <Header as='h3' style={{ fontSize: '2em' }}>
+            Stay Connected!
+          </Header>
 
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
+          <List horizontal>
+            <List.Item as="a" target="_blank" href='https://www.facebook.com/BattleKoiGames'>
+              <Icon link={true} color="blue" name="facebook" size="massive" />
+            </List.Item>
+            <List.Item as="a" target="_blank" href='https://twitter.com/BattleKoi'>
+              <Icon link={true} color="blue" name="twitter" size="massive" />
+            </List.Item>
+            <List.Item as="a" target="_blank" href='https://www.youtube.com/channel/UCuY7aGoy6gnluhWWcEZ5BIQ'>
+              <Icon link={true} color="red" name="youtube" size="massive" />
+            </List.Item>
+            <List.Item as="a" target="_blank" href="mailto:thien@battlekoi.com?subject='Battle Koi Website Enquiry'">
+              <Icon link={true} color="grey" name="mail" size="massive" />
+            </List.Item>
+          </List>
+        </Container>
       </Segment>
     </DesktopLayout>
   )

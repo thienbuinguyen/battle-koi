@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Header, Placeholder } from 'semantic-ui-react';
+import { Segment, Grid, Header, Placeholder, Container, List } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
 
 import HomepageHeading from './homepage-heading';
@@ -12,30 +12,23 @@ function MilkshakeJump() {
     }
   >
     <Segment vertical>
-      <Grid container stackable verticalAlign='middle'>
-        <Grid.Row>
-          <Grid.Column textAlign="center">
-            <Header as='h3'>
-              This page is currently under construction...
-            </Header>
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign="center">
-            <Placeholder>
-              <Placeholder.Header>
-                <Placeholder.Line length='very short' />
-                <Placeholder.Line length='medium' />
-              </Placeholder.Header>
-              <Placeholder.Paragraph>
-                <Placeholder.Line length='short' />
-              </Placeholder.Paragraph>
-            </Placeholder>
+      <Container text textAlign="center">
+        <Header as="h3" style={{fontSize: "2em"}}>Reaching the stars...</Header>
+        <p style={{fontSize:"1.5em"}}>
+        Wow, here's a milkshake that can jump up <i>high</i>!
+        <br></br>The goal is to see how far up the <i>sky</i>
+        <br></br>But trouble awaits your path, be ready to <i>cry</i>
+        <br></br>If you aren't careful, you will surely <i>die</i>.
+        </p>
 
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-
+        <p>Stay tuned for more details.</p>
+        {/* <Header as="h3" style={{fontSize: "2em"}}>Features</Header>
+        <List bulleted>
+          <List.Item>
+            What
+          </List.Item>
+        </List> */}
+      </Container>
     </Segment>
   </DesktopLayout>
   )

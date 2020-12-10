@@ -1,11 +1,19 @@
 import React, { Fragment } from 'react';
 import {
+  Button,
   Container, Grid, Header, Placeholder, Segment
 } from 'semantic-ui-react';
+import styled, { css } from 'styled-components'
 import DesktopNav from './desktop-nav';
 import HomepageHeading from './homepage-heading';
 import Footer from './footer';
 import DesktopLayout from './desktop-layout';
+
+
+const Paragraph = styled.p`
+  text-align: center;
+  font-size: 1.5em;
+`
 
 function Home() {
   return (
@@ -15,29 +23,19 @@ function Home() {
       }
     >
       <Segment vertical>
-        <Grid container stackable verticalAlign='middle'>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Header as='h3'>
-                This page is currently under construction...
+        <Container text textAlign="center">
+          <Header as='h3' style={{ fontSize: '2em' }}>
+            Upcoming Games
               </Header>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Placeholder>
-                <Placeholder.Header>
-                  <Placeholder.Line length='very short' />
-                  <Placeholder.Line length='medium' />
-                </Placeholder.Header>
-                <Placeholder.Paragraph>
-                  <Placeholder.Line length='short' />
-                </Placeholder.Paragraph>
-              </Placeholder>
+          <p style={{ fontSize: '1.5em' }}>
+            Milkshake Jump is about experiencing the life of a milkshake.
+            Thankfully, you are a milkshake that can jump.
+          </p>
 
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+          <Button as='a' size='large' href="/milkshake-jump">
+            Read More
+          </Button>
+        </Container>
 
       </Segment>
     </DesktopLayout>

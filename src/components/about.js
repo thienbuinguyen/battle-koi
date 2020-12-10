@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Placeholder, Segment } from 'semantic-ui-react';
+import { Container, Grid, Header, Placeholder, Segment } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
 
 import DesktopNav from './desktop-nav';
@@ -13,30 +13,26 @@ function About() {
       }
     >
       <Segment vertical>
-        <Grid container stackable verticalAlign='middle'>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Header as='h3'>
-                This page is currently under construction...
-            </Header>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Placeholder>
-                <Placeholder.Header>
-                  <Placeholder.Line length='very short' />
-                  <Placeholder.Line length='medium' />
-                </Placeholder.Header>
-                <Placeholder.Paragraph>
-                  <Placeholder.Line length='short' />
-                </Placeholder.Paragraph>
-              </Placeholder>
-
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
+          <Grid celled="internally" columns="equal" stackable>
+            <Grid.Row textAlign='center'>
+              <Grid.Column>
+                <Header as='h3' style={{ fontSize: '2em' }}>
+                  Battle Koi
+                </Header>
+                <p style={{fontSize: "1.5em"}}>
+                  One man studio focusing on mobile games
+                </p>
+              </Grid.Column>
+              <Grid.Column>
+                <Header as='h3' style={{ fontSize: '2em' }}>
+                  Me
+                </Header>
+                <p style={{fontSize: "1.5em"}}>
+                  Australian programmer making games as a hobby
+                  </p>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
       </Segment>
     </DesktopLayout>
   )
