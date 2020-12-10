@@ -40,8 +40,8 @@ function App() {
           <Route path="/milkshake-jump">
             <MilkshakeJump />
           </Route>
-          <Redirect from="/home" to="/" />
-          <Route path="*" component={PageNotFound} />
+          <Redirect from="/home" to="/"/>
+          <Route path="*" component={PageNotFound} status={404}/>
         </Switch>
       </Router>
       <Media at="sm">
