@@ -41,7 +41,7 @@ function App() {
             <MilkshakeJump />
           </Route>
           <Redirect from="/home" to="/"/>
-          <Route path="*" component={PageNotFound} status={404}/>
+          {/* <Route path="*" component={PageNotFound} status={404}/> */}
         </Switch>
       </Router>
       <Media at="sm">
