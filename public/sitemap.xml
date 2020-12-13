@@ -8,7 +8,7 @@
 
       <lastmod>2020-12-09</lastmod>
 
-      <changefreq>monthly</changefreq>
+      <changefreq>weekly</changefreq>
 
       <priority>0.8</priority>
 
@@ -20,7 +20,7 @@
 
     <lastmod>2020-12-09</lastmod>
 
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
 
     <priority>0.5</priority>
 
@@ -50,7 +50,7 @@
 
    </url>
 
-      <url>
+   <url>
 
       <loc>https://battlekoi.com/privacy</loc>
 
@@ -62,9 +62,7 @@
 
    </url>
 
-   </url>
-
-      <url>
+   <url>
 
       <loc>https://battlekoi.com/terms-and-conditions</loc>
 
