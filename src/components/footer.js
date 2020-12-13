@@ -22,6 +22,8 @@ function Footer() {
               <List link inverted>
                 <List.Item as='a' onClick={() => { history.push('/about') }}>About</List.Item>
                 <List.Item as='a' onClick={() => { history.push('/contact') }}>Contact</List.Item>
+                <List.Item as='a' onClick={() => { history.push('/privacy') }}>Privacy Policy</List.Item>
+                <List.Item as='a' onClick={() => { history.push('/terms-and-conditions') }}>Terms & Conditions</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>

@@ -50,7 +50,7 @@ function DesktopNav(props) {
             <Menu.Item active={props.active === "about"} onClick={() => { history.push('/about') }}>
               About
                   </Menu.Item>
-                  <Menu.Item active={props.active === "contact"} onClick={() => { history.push('/contact') }}>
+            <Menu.Item active={props.active === "contact"} onClick={() => { history.push('/contact') }}>
               Contact
                   </Menu.Item>
           </Container>
