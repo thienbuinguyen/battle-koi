@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Grid, Header, Placeholder, Segment } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
 
@@ -12,6 +13,10 @@ function About() {
         <HomepageHeading mainContent={"BATTLE KOI"} subContent={"About"} />
       }
     >
+      <Helmet>
+        <title>Battle Koi - About</title>
+      </Helmet>
+
       <Segment vertical>
           <Grid celled="internally" columns="equal" stackable>
             <Grid.Row textAlign='center'>

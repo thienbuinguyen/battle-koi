@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Grid, Header, Placeholder, Segment, List, Icon } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
 import HomepageHeading from './homepage-heading';
@@ -16,6 +17,11 @@ function Contact(props) {
         <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Contact"} />
       }
     >
+
+      <Helmet>
+        <title>Battle Koi - Contact</title>
+      </Helmet>
+
       <Segment vertical>
         <Container text textAlign="center">
           <Header as='h3' style={{ fontSize: '2em' }}>

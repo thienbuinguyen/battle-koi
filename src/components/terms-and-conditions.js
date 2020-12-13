@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Grid, Header, Placeholder, Segment } from 'semantic-ui-react';
 import DesktopLayout from './desktop-layout';
 
@@ -12,6 +13,11 @@ function Terms() {
         <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Terms & Conditions"} />
       }
     >
+
+      <Helmet>
+        <title>Battle Koi - T&C</title>
+      </Helmet>
+
       <Segment vertical>
         <Container text>
           <p>

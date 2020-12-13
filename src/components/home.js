@@ -8,6 +8,7 @@ import DesktopNav from './desktop-nav';
 import HomepageHeading from './homepage-heading';
 import Footer from './footer';
 import DesktopLayout from './desktop-layout';
+import { Helmet } from 'react-helmet';
 
 
 const Paragraph = styled.p`
@@ -22,6 +23,10 @@ function Home() {
         <HomepageHeading mainContent={"BATTLE KOI"} subContent={"One Man Game Development Studio"} />
       }
     >
+      <Helmet>
+        <title>Battle Koi</title>
+      </Helmet>
+
       <Segment vertical>
         <Container text textAlign="center">
           <Header as='h3' style={{ fontSize: '2em' }}>
