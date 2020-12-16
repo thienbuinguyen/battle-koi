@@ -1,7 +1,7 @@
 // @ts-nocheck
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect
@@ -30,7 +30,7 @@ function App() {
     <MediaContextProvider>
       <Router>
         <Switch>
-        <Route exact path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/about">
@@ -48,7 +48,7 @@ function App() {
           <Route path="/milkshake-jump">
             <MilkshakeJump />
           </Route>
-          <Redirect from="/home" to="/"/>
+          <Redirect from="/home" to="/" />
           {/* <Route path="*" component={PageNotFound} status={404}/> */}
         </Switch>
       </Router>
