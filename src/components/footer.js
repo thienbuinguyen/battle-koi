@@ -10,7 +10,7 @@ const Mailto = ({ email, subject, body, children }) => {
 
 function Footer() {
   const history = useHistory();
-  const copyright = "Copyright \u00a9 Battle Koi. All Rights Reserved.";
+  const copyright = "\u00a9 2021 Battle Koi. All Rights Reserved.";
 
   return (
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
@@ -39,10 +39,10 @@ function Footer() {
 
 
               <List horizontal>
-                <List.Item as="a" target="_blank" href='https://www.facebook.com'>
+                <List.Item as="a" target="_blank" href='https://www.facebook.com/BattleKoiGames'>
                   <Icon link={true} color="blue" name="facebook" size="big" />
                 </List.Item>
-                <List.Item as="a" target="_blank" href='https://www.twitter.com'>
+                <List.Item as="a" target="_blank" href='https://twitter.com/BattleKoi'>
                   <Icon link={true} color="blue" name="twitter" size="big" />
                 </List.Item>
                 <List.Item as="a" target="_blank" href='https://www.instagram.com/battlekoigames/'>
