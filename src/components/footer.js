@@ -40,20 +40,23 @@ function Footer() {
 
               <List horizontal>
                 <List.Item as="a" target="_blank" href='https://www.facebook.com'>
-                <Icon link={true} color="blue" name="facebook" size="big" />
+                  <Icon link={true} color="blue" name="facebook" size="big" />
                 </List.Item>
                 <List.Item as="a" target="_blank" href='https://www.twitter.com'>
-                <Icon link={true} color="blue" name="twitter" size="big" />
+                  <Icon link={true} color="blue" name="twitter" size="big" />
                 </List.Item>
-                <List.Item as="a" target="_blank" href='https://www.youtube.com'>
-                <Icon link={true} color="red" name="youtube" size="big" />
+                <List.Item as="a" target="_blank" href='https://www.instagram.com/battlekoigames/'>
+                  <Icon link={true} color="blue" name="instagram" size="big" />
+                </List.Item>
+                <List.Item as="a" target="_blank" href='https://www.youtube.com/channel/UCuY7aGoy6gnluhWWcEZ5BIQ'>
+                  <Icon link={true} color="red" name="youtube" size="big" />
                 </List.Item>
                 <List.Item as="a" target="_blank" href="mailto:thien@battlekoi.com?subject='Battle Koi Website Enquiry'">
-                <Icon link={true} color="grey" name="mail" size="big" />
+                  <Icon link={true} color="grey" name="mail" size="big" />
                 </List.Item>
               </List>
             </Grid.Column>
-            
+
           </Grid.Row>
           <Grid.Row>
             {copyright}

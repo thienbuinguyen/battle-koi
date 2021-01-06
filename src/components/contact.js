@@ -30,16 +30,19 @@ function Contact(props) {
 
           <List horizontal>
             <List.Item as="a" target="_blank" href='https://www.facebook.com/BattleKoiGames'>
-              <Icon link={true} color="blue" name="facebook" size="massive" />
+              <Icon link={true} color="blue" name="facebook" size="huge" />
             </List.Item>
             <List.Item as="a" target="_blank" href='https://twitter.com/BattleKoi'>
-              <Icon link={true} color="blue" name="twitter" size="massive" />
+              <Icon link={true} color="blue" name="twitter" size="huge" />
+            </List.Item>
+            <List.Item as="a" target="_blank" href='https://www.instagram.com/battlekoigames/'>
+              <Icon link={true} color="blue" name="instagram" size="huge" />
             </List.Item>
             <List.Item as="a" target="_blank" href='https://www.youtube.com/channel/UCuY7aGoy6gnluhWWcEZ5BIQ'>
-              <Icon link={true} color="red" name="youtube" size="massive" />
+              <Icon link={true} color="red" name="youtube" size="huge" />
             </List.Item>
             <List.Item as="a" target="_blank" href="mailto:thien@battlekoi.com?subject='Battle Koi Website Enquiry'">
-              <Icon link={true} color="grey" name="mail" size="massive" />
+              <Icon link={true} color="grey" name="mail" size="huge" />
             </List.Item>
           </List>
         </Container>
