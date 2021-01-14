@@ -17,7 +17,7 @@ function DesktopNav(props) {
   const [fixed, setFixed] = useState(false);
   const hideFixedMenu = () => { setFixed(false); };
   const showFixedMenu = () => { setFixed(true); };
-
+  console.dir(props.minHeight);
   return (
     <Visibility
       once={false}
@@ -27,7 +27,7 @@ function DesktopNav(props) {
       <Segment
         inverted
         textAlign='center'
-        style={{ minHeight: 700, padding: '1em 0em' }}
+        style={{ minHeight: props.minHeight || 700, padding: '1em 0em' }}
         vertical
       >
         <Menu

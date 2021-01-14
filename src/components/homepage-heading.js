@@ -21,7 +21,7 @@ function HomepageHeading(props) {
         marginBottom: 0,
         marginTop: '3em',
       }}
-      image='logo.png'
+      image={props.image}
     />
     {/* <Image src="logo.png" size="medium" centered></Image> */}
     <Header

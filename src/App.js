@@ -16,7 +16,7 @@ import PageNotFound from './components/page-not-found';
 import Privacy from 'components/privacy';
 import Terms from 'components/terms-and-conditions';
 
-const { MediaContextProvider, Media } = createMedia({
+const { MediaContextProvider } = createMedia({
   breakpoints: {
     sm: 0,
     md: 768,
@@ -52,12 +52,6 @@ function App() {
           {/* <Route path="*" component={PageNotFound} status={404}/> */}
         </Switch>
       </Router>
-      <Media at="sm">
-
-      </Media>
-      <Media greaterThanOrEqual="md">
-
-      </Media>
     </MediaContextProvider>
   );
 }

@@ -14,7 +14,7 @@ function Contact(props) {
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Contact"} />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Contact"} image="logo.png" />
       }
     >
 

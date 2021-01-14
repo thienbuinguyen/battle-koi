@@ -10,7 +10,7 @@ function Privacy() {
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Privacy Policy"} />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Privacy Policy"} image="logo.png" />
       }
     >
 

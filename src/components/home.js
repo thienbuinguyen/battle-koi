@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react';
 import {
   Button,
-  Container, Grid, Header, Placeholder, Segment
+  Container, Grid, Header, Placeholder, Segment, Image
 } from 'semantic-ui-react';
 import styled, { css } from 'styled-components'
-import DesktopNav from './desktop-nav';
 import HomepageHeading from './homepage-heading';
-import Footer from './footer';
 import DesktopLayout from './desktop-layout';
 import { Helmet } from 'react-helmet';
 
@@ -20,7 +18,7 @@ function Home() {
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"One Man Game Development Studio"} />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"One Man Game Development Studio"} image="logo.png" />
       }
     >
       <Helmet>
@@ -32,12 +30,14 @@ function Home() {
           <Header as='h3' style={{ fontSize: '2em' }}>
             Upcoming Games
               </Header>
-          <p style={{ fontSize: '1.5em' }}>
-            Milkshake Jump is about experiencing the life of a milkshake.
-            Thankfully, you are a milkshake that can jump.
-          </p>
+          <Segment vertical>
+            <Image src="milkshake-jump/feature.png" />
+            <Container text >
+            <p style={{ fontSize: "1.5em" }}>Jump higher than any other milkshake!</p>
+            </Container>
+          </Segment>
 
-          <Button as='a' size='large' href="/milkshake-jump">
+          <Button as='a' size='large' href='/#/milkshake-jump'>
             Read More
           </Button>
         </Container>

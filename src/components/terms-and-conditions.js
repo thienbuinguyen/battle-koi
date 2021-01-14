@@ -10,7 +10,7 @@ function Terms() {
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Terms & Conditions"} />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Terms & Conditions"} image="logo.png" />
       }
     >
 

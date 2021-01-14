@@ -4,10 +4,9 @@ import DesktopNav from "./desktop-nav";
 import Footer from "./footer";
 
 function DesktopLayout(props) {
-  console.dir(props.navMainContent);
   return (
     <Fragment>
-      <DesktopNav>
+      <DesktopNav minHeight={props.minHeight}>
         {props.heading}
       </DesktopNav>,
       <Container>

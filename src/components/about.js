@@ -10,7 +10,7 @@ function About() {
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"About"} />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"About"} image="logo.png" />
       }
     >
       <Helmet>
