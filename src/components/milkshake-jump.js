@@ -22,11 +22,14 @@ function MilkshakeJump() {
       </Segment>
       <Segment vertical>
         <Container text textAlign="center">
-          <Header as="h2">COMING SOON TO GOOGLE PLAY STORE</Header>
+        <Image 
+                  href='https://play.google.com/store/apps/details?id=com.BattleKoi.MilkshakeJump&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                  src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                  />
         </Container>
 
       </Segment>
-      <Segment vertical>
+      <Segment>
         <Container text textAlign="center">
           <Header as="h3" style={{ fontSize: "2em" }}>Reaching the stars...</Header>
           <p style={{ fontSize: "1.5em" }}>
@@ -36,11 +39,11 @@ function MilkshakeJump() {
         </Container>
       </Segment>
       <Segment>
-        <Container text textAlign="center">
+        <Container textAlign="center">
           <Header as="h3" style={{ fontSize: "2em" }}>Features</Header>
         </Container>
 
-        <Container text textAlign="left">
+        <Container textAlign="left">
           <List bulleted >
             <List.Item>
               Jumping milkshakes!

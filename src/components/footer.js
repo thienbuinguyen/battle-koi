@@ -59,6 +59,9 @@ function Footer() {
 
           </Grid.Row>
           <Grid.Row>
+          Google Play and the Google Play logo are trademarks of Google LLC.
+          </Grid.Row>
+          <Grid.Row>
             {copyright}
           </Grid.Row>
         </Grid>
