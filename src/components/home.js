@@ -18,7 +18,7 @@ function Home() {
   return (
     <DesktopLayout heading=
       {
-        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"One Man Game Development Studio"} image="logo.png" />
+        <HomepageHeading mainContent={"BATTLE KOI"} subContent={"Game Development Studio"} image="logo.png" />
       }
     >
       <Helmet>
@@ -30,7 +30,8 @@ function Home() {
           <Header as='h3' style={{ fontSize: '2em' }}>
             Released Games
               </Header>
-          <Segment vertical>
+          <Segment>
+            <Header as='h2'>Milkshake Jump</Header>
             <Image src="milkshake-jump/feature.png" />
             <Container text >
               <p style={{ fontSize: "1.5em" }}>Jump higher than any other milkshake!</p>
@@ -42,7 +43,7 @@ function Home() {
                   />
                 </Grid.Column>
                 <Grid.Column verticalAlign="middle">
-                  <Button as='a' size='big' href='/#/milkshake-jump'>
+                  <Button as='a' size='massive' href='/#/milkshake-jump'>
                     Read More
           </Button>
                 </Grid.Column>

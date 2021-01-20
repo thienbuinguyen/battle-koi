@@ -29,16 +29,16 @@ function MilkshakeJump() {
         </Container>
 
       </Segment>
-      <Segment>
+      <Segment vertical>
         <Container text textAlign="center">
-          <Header as="h3" style={{ fontSize: "2em" }}>Reaching the stars...</Header>
+          <Header as="h3" style={{ fontSize: "2em" }}>Milkshake Jump</Header>
           <p style={{ fontSize: "1.5em" }}>
             Some milkshakes have a dream... A dream of reaching the stars! Thankfully, these milkshakes can jump and the skies are FILLED with rainbow clouds and floating mushrooms.
             Can YOU help them fulfill their dream?
           </p>
         </Container>
       </Segment>
-      <Segment>
+      <Segment vertical>
         <Container textAlign="center">
           <Header as="h3" style={{ fontSize: "2em" }}>Features</Header>
         </Container>
@@ -63,7 +63,7 @@ function MilkshakeJump() {
           </List>
         </Container>
       </Segment>
-      <Segment>
+      <Segment vertical>
         <Container>
           <Grid stackable>
             {
@@ -72,7 +72,7 @@ function MilkshakeJump() {
           </Grid>
         </Container>
       </Segment>
-      <Segment>
+      <Segment vertical>
         <Embed
           id='WA8DAXLNmjE'
           placeholder='milkshake-jump/youtube-placeholder.png'
