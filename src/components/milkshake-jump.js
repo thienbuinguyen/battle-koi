@@ -7,7 +7,7 @@ function MilkshakeJump() {
 
   const images = [];
   for (let i = 1; i < 9; i++) {
-    const str = `milkshake-jump/mobile-${i}.png`;
+    const str = `milkshake-jump/mobile-${i}.jpg`;
     images.push(<Image src={str} size="small" ></Image>);
   }
 
@@ -18,7 +18,7 @@ function MilkshakeJump() {
       </Helmet>
 
       <Segment vertical>
-        <Image src="milkshake-jump/feature.png" />
+        <Image src="milkshake-jump/feature.jpg" />
       </Segment>
       <Segment vertical>
         <Container text textAlign="center">
@@ -75,7 +75,7 @@ function MilkshakeJump() {
       <Segment vertical>
         <Embed
           id='WA8DAXLNmjE'
-          placeholder='milkshake-jump/youtube-placeholder.png'
+          placeholder='milkshake-jump/youtube-placeholder.jpg'
           source='youtube'
         />
       </Segment>
