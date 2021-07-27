@@ -32,7 +32,7 @@ function Home() {
               </Header>
           <Segment>
             <Header as='h2'>Milkshake Jump</Header>
-            <Image src="milkshake-jump/feature.png" />
+            <Image src="milkshake-jump/feature.jpg" />
             <Container text >
               <p style={{ fontSize: "1.5em" }}>Jump higher than any other milkshake!</p>
               <Grid columns={2} divided>
